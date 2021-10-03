@@ -3,7 +3,7 @@ use eframe::{egui, epi};
 /// We derive Deserialize/Serialize so we can persist app state on shutdown.
 #[cfg_attr(feature = "persistence", derive(serde::Deserialize, serde::Serialize))]
 #[cfg_attr(feature = "persistence", serde(default))] // if we add new fields, give them default values when deserializing old state
-pub struct TemplateApp {
+pub struct MingApp {
     // Example stuff:
     label: String,
 
@@ -12,19 +12,19 @@ pub struct TemplateApp {
     value: f32,
 }
 
-impl Default for TemplateApp {
+impl Default for MingApp {
     fn default() -> Self {
         Self {
             // Example stuff:
-            label: "Hello World!".to_owned(),
-            value: 2.7,
+            label: "Buui!".to_owned(),
+            value: 7.1,
         }
     }
 }
 
-impl epi::App for TemplateApp {
+impl epi::App for MingApp {
     fn name(&self) -> &str {
-        "egui template"
+        "ming"
     }
 
     /// Called once before the first frame.

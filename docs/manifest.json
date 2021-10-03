@@ -1,6 +1,6 @@
 {
-    "name": "Egui Template PWA",
-    "short_name": "egui-template-pwa",
+    "name": "Ming PWA",
+    "short_name": "ming-pwa",
     "icons": [{
       "src": "./icon-256.png",
         "sizes": "256x256",
